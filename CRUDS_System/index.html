@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRUDS System</title>
+
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/Main.css">
+    </head>
+    <body>
+        <section class="w-75 mx-auto py-4">
+            <h1 class="py-3 fw-bolder text-danger text-center mb-5 fw-bold">Product
+                Managment System</h1>
+
+            <input type="text" name="Name" id="Product_Name_Input"
+                class="form-control" placeholder="Product Name">
+
+            <input type="number" name="Price" id="Product_Price_Input"
+                class="form-control mt-4" placeholder="Product Price">
+
+
+            <select id="Product_Category_Input" class="form-select mt-4"
+                name="Category">
+                <option value="TV">TV</option>
+                <option value="Mobile">Mobile</option>
+                <option value="Laptop">Laptop</option>
+                <option value="electric_machines">Electric Machines</option>
+            </select>
+
+            <textarea name="Description" id="Product_Description_Input"
+                class="form-control
+                mt-4" placeholder="Description..."></textarea>
+
+
+            <button class="btn btn-sm btn-outline-success mt-4" id="Add_button">Add
+                Product</button>
+
+            <button class="btn btn-sm btn-outline-success mt-4"
+                id="Edit_button">Edit Product</button>
+
+            <button class="btn btn-sm btn-outline-danger mt-4"
+                id="Clear_Input_Button">Clear Form</button>
+        </section>
+
+
+        <input type="search" id="Input_Search" class="input-search form-control
+            m-auto mb-2 mt-5 w-50" onkeyup="Search_Product(this.value)"
+            placeholder="Search...">
+
+        <section class="Section-2 mx-auto py-4 text-center">
+            <table class="table">
+                <thead>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Updata</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="Table_Body">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <script src="JS/bootstrap.bundle.js"></script>
+        <script src="JS/index.js"></script>
+    </body>
+</html>

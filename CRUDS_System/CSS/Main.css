@@ -1,0 +1,13 @@
+.Section-2 {
+    width: 73%;
+}
+
+#Product_Description_Input {
+    height: 150px;
+}
+
+body {
+    background-image   : url(../Images/bg.jpg);
+    background-position: center center;
+    background-size    : contain;
+}
